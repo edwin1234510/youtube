@@ -69,6 +69,7 @@ i{
   justify-content: space-between;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 10px;
 }
 .logo{
   display: flex;
@@ -298,4 +299,27 @@ i{
 }
 .vistas{
   margin-right: 5px;
+}
+@media(max-width:1200px){
+body{
+    grid-template-columns: 70px;
+  }
+.sidebar-items span, .sidebar-items h4{
+  display: none;
+}
+.sidebar-items{
+  padding: 0;
+}
+.sidebar-item{
+  padding: 0 20px;
+}
+.chips-wapper{
+  max-width: calc(100vw - 70px);
+}
+
+}
+@media(max-width:800px){
+  .search-container{
+    display: none;
+  }
 }
